@@ -1,0 +1,20 @@
+/* Hide IE banner by default */
+.outdated-notice {
+	display: none;
+}
+
+/* Show IE banner on Internet Explorer 10 and 11 */
+@media screen and (-ms-high-contrast: active),
+       screen and (-ms-high-contrast: none) {
+  .outdated-notice {
+    display: block;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #d37842;
+}
+
+::selection {
+  background: #d37842;
+}

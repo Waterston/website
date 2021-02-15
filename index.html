@@ -8,7 +8,7 @@
    <meta name="description" content="WaterSys, a general purposes and moderation Discord bot for all." />
    <!-- Open Graph Protocol -->
    <meta property="og:type" content="website" />
-   <meta property="og:title" content="WaterSYs" />
+   <meta property="og:title" content="WaterSys" />
    <meta property="og:description" content="WaterSys, a general purposes and moderation Discord bot for all." />
    <meta property="og:url" content="https://watersys.pearo.icu/"/>
    <meta property="og:image" content="https://watersys.pearo.icu/assets/images/primary-logo.png" />
@@ -25,10 +25,11 @@
    <meta name="theme-color" content="#d37842" />
    <!-- Bootstrap -->
    <link href="assets/css/bootstrap-4.3.1.css" rel="stylesheet">
+   <link href="assets/css/local.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="#">WaterstonSystems</a>
+       <a class="navbar-brand" href="#">WaterSys</a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
        </button>
@@ -63,7 +64,13 @@
           <a class="btn btn-primary btn-lg" href="#" role="button">Coming soon</a>
        </p>
     </div>
-    <div class="container"> <br>
+    <div class="container"> 
+	   <div class="alert alert-danger outdated-notice" role="alert">
+	     <h4 class="alert-heading">Outdated Browser</h4>
+		   We noticed that you were using Internet Explorer. While this website should work fine, we highly recommend that you migrate to a new browser.
+		   <hr>
+		   <p class="mb-0">You can upgrade by using <a href="https://www.microsoft.com/en-us/edge" class="alert-link">Microsoft Edge</a> or alternatives such as <a href="https://www.mozilla.org/en-US/firefox/new/" class="alert-link">Mozilla Firefox</a> (recommended), <a href="https://vivaldi.com/" class="alert-link">Vivaldi</a>, or <a href="https://www.google.com/chrome/" class="alert-link">Google Chrome</a>.</p>
+	   </div>
        <hr>
        <br>
        <div class="row">
@@ -125,7 +132,7 @@
        <div class="row">
           <div class="text-center col-lg-6 offset-lg-3">
              <h4>WaterSys </h4>
-             <p>Hosted by Pear, 2020.</p>
+             <p>Hosted by Pear, 2020-<script>document.write(new Date().getFullYear());</script>.</p>
           </div>
        </div>
   </div>
